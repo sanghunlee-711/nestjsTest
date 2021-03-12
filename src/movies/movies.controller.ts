@@ -40,7 +40,7 @@ export class MoviesController {
   @Get('/:id')
   getOne(@Param('id') movieId: number): Movie {
     //@Parameter로 요청을 하고 id를 arg movieId에 저장하는 거임
-    console.log(typeof movieId);
+    // console.log(typeof movieId);
     return this.moviesServie.getOne(movieId);
   }
 
